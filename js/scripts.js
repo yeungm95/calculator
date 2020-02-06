@@ -17,5 +17,14 @@ var divide = function(number1, number2) {
 var number1 = parseInt(prompt("Enter a number:"));
 var number2 = parseInt(prompt("Enter another number:"));
 
-var calculatorResult = 
+var calculatorResult
+alert(calculatorResult);
 
+var bmi = function(weight, height) {
+	return (weight/(height**2)) * 703;
+} 
+var weight = parseInt(prompt("What is your weight in lbs?"));
+var height = parseInt(prompt("What is your height in inches?"));
+
+var bmiResult = bmi(weight, height).toPrecision(3);
+alert(bmiResult)
